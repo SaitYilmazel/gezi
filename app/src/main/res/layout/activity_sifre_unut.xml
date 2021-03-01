@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65a8ff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UyeOl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtsifreemail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textColorHint="#bababa"
+                android:background="@drawable/customedittext"
+                android:drawableLeft="@drawable/ic_envelope"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="E-Mail" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsifresifirla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custombutton"
+            android:text="Şifreyi Sıfırla" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/island"/>
+</LinearLayout>

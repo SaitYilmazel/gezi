@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_anasayfa"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_anasayfa" />
+    </group>
+
+    <item android:title="Ayarlar">
+        <menu>
+            <item
+                android:id="@+id/nav_cikisyap"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/menu_cikisyap"
+                android:onClick="cikis"/>
+
+        </menu>
+    </item>
+
+</menu>

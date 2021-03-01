@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65a8ff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UyeOl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textColorHint="#bababa"
+                android:background="@drawable/customedittext"
+                android:drawableLeft="@drawable/ic_envelope"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="E-Mail" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/txtparola"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/customedittext"
+                android:textColorHint="#bababa"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_restricted"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="Parola" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+    <Button
+        android:id="@+id/btngirisyap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/custombutton"
+        android:text="Giriş Yap" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btngirisyap"
+            android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txtüyedeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Üye Değil'misiniz ?"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/txtüye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Şimdi Üye Olun"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/txtüyedeg"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sifredeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="Şifreni mi Unuttun ?"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/btngirisyap"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/island" />
+</LinearLayout>

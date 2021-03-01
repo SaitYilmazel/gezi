@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/custompopup"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#3872bc"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txtsehir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="text"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:id="@+id/resim"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btngaleri"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Resim Seç"
+                android:background="@drawable/custombutton"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/txtmetin"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnyukle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yükle"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custombutton"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
