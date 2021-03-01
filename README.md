@@ -1,1 +1,1 @@
-"# textscanner" 
+"# gezi" 
